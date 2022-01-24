@@ -1,0 +1,410 @@
+body {
+    background-color: #FAFAFA;
+}
+
+.conteudo{
+    width: 935px;
+    
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.topo-background {
+    width: 100%;
+    height: 54px;
+    background-color: #FFFFFF;
+    border: 1px solid #dbdbdb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.icones-topo {
+    width: 950px;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+  
+    position: fixed;
+    top: 0;
+   
+    z-index: 1;
+
+}
+
+.icones-topo>img {
+    display: none;
+}
+
+.icones-topo input {
+    border-radius: 5px;
+    background-color: #EFEFEF;
+    font-size: 20px;
+    padding: 5px;
+    height: 20px;
+    border: none;
+}
+
+.icones-topo input::placeholder {
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 1em;
+
+    margin: 0 10px;
+
+    background-color: #dbdbdb;
+}
+
+.logo { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    filter: contrast(100%);
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.conteudo-principal{
+    width: 100%;
+}
+
+/****************Estilização dos stories****************/
+
+.stories {
+    width: 614px;
+    position: relative;
+    top: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.story {
+    width: 70px;
+    margin: 15px 0 15px 15px;
+    padding-bottom: 15px; 
+    display: flex;
+    justify-content: center;
+}
+
+.story img:first-child {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 70px;
+}
+
+.story img:nth-child(2) {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 20px;
+}
+
+.story span {
+    position: absolute; 
+    width: 70px; 
+    bottom: 15px;
+    text-align: center;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.botao-stories {
+    position: absolute;
+    right: 5px;
+    top: 40%;
+    color: #FFFFFF;
+    filter: drop-shadow(2px 2px 2px grey);
+}
+
+/****************Estilização dos posts****************/
+
+.posts {
+    width: 614px;
+    margin-top: 112px;
+}
+
+.post-individual {
+    margin-bottom: 60px;
+    background-color: #fff;
+    border: 1px solid #DBDBDB;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.post-individual img{
+    object-fit: cover;
+    width: 612px;
+    height: 612px;
+}
+
+.post-individual video {
+    object-fit: cover;
+    width: 612px;
+    height: 612px;    
+}
+
+.topo-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding-right: 10px;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.topo-post div {
+    display: flex;
+    align-items: center;
+}
+
+.topo-post img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    
+}
+
+.rodape-post {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 10px 10px;
+}
+
+.rodape-post button {
+    background: none;
+    border: none;
+    font-size: 22px;
+}
+
+.likes {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+
+    margin: 0 15px 15px 15px;
+}
+
+.likes span:first-child {
+    margin-left: 5px;
+}
+
+.likes span:nth-child(even){
+    font-weight: bold;
+}
+
+.likes img {
+    object-fit: cover;
+    border-radius: 50%;
+
+    width: 25px;
+    height: 25px;
+}
+
+.contagem-comentarios button {
+    background: none;
+    border: none;
+
+    font-size: 16px;
+    color: grey;
+
+    margin-left: 10px;
+}
+
+.input-comentario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 10px 10px 15px;
+
+    margin-top: 20px;
+
+    border-top: 1px solid #dbdbdb79;
+}
+
+.input-comentario div {
+    display: flex;
+}
+
+.input-comentario div:first-child {
+    font-size: 25px;
+}
+
+.input-comentario div input {
+    font-size: 14px;
+
+    margin-left: 10px;    
+}
+
+.input-comentario>input {
+    color: hsla(203, 90%, 51%, 0.336);
+    font-weight: bold;
+}
+
+.input-comentario>input:hover {
+    color: hsl(203, 90%, 51%);
+    font-weight: bold;
+}
+
+.input-comentario input{
+    background: none;
+    border: none;
+}
+
+/****************Estilizações da sidebar****************/
+
+.side-bar {
+    width: 293px;
+    
+    position: fixed;
+    top: 88px;
+    right: calc((100vw - 935px) / 2);
+    
+}
+
+
+.perfil-principal{
+    padding: 10px 0;
+    display: flex;
+}
+.perfil-principal img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 55px;
+    height: 55px;
+}
+
+.perfil-principal div {
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 14px;
+}
+
+.perfil-principal div p:first-child {
+    font-weight: bold;
+}
+
+.perfil-principal div p:last-child {
+    color: grey;
+}
+
+.sugestoes {
+    position: absolute;
+    width: 100%;
+}
+
+.cabecalho-sugestoes {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.cabecalho-sugestoes p {
+    color: #8E8E8E;
+    font-weight: bold;
+}
+
+.cabecalho-sugestoes a{
+    text-decoration: none;
+    color: black;
+}
+
+.sugestao-seguir {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sugestao-seguir div p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sugestao-seguir div p:first-child {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.sugestao-seguir div p:last-child {
+    color: grey;
+    font-size: 12px;
+}
+
+.sugestao-seguir div {
+    margin: auto 0 auto 5px;
+    display: flex;
+}
+
+.sugestao-seguir div div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sugestao-seguir img{
+    object-fit: cover;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: coral;
+}
+
+.sugestao-seguir button {
+    text-decoration: none;
+    border: none;
+    background: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #139EF2;
+    padding: 0;
+}
+
+.rodape-sugestoes {
+    font-size: 11px;
+    color: #C7C7C7;
+
+    margin: 20px 10px;
+}
+
+.rodape-sugestoes p {
+    margin-top: 20px;
+}
+
+.barra-rodape-mobile{
+    display: none;
+}
